@@ -1,5 +1,7 @@
 # Packet capture forensics lab
 
+**[View the report in your browser](https://Michaelhoang8.github.io/packet-capture-forensics-lab/)**
+
 A bounded, source-built reader for **classic PCAP → Ethernet → IPv4 → UDP → selected DNS**, with byte-offset provenance and a reproducible offline analysis study. It separates malformed, truncated and unsupported records, verifies the applicable checksums, and matches DNS observations conservatively.
 
 All five PCAP files are generated locally from owned synthetic bytes. No socket is opened, no live traffic is captured, and no third-party packet data is used. Code, fixtures, analysis and documentation were created with AI assistance. This is a protocol engineering study, not a production IDS or a claim of malicious activity.
