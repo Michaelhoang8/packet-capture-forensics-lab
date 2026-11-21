@@ -1,0 +1,515 @@
+{
+  "capture": {
+    "metadata": {
+      "endianness": "little",
+      "timestamp_resolution": 1000000,
+      "snaplen": 65535,
+      "linktype": 1,
+      "bytes": 1218,
+      "sha256": "852bfc8ab8a5a7979feac0658f92fc71caafed795d702afd797a337ae05b8e29"
+    },
+    "records": [
+      {
+        "index": 0,
+        "record_offset": 24,
+        "data_offset": 40,
+        "timestamp_ns": 1700000000000000000,
+        "captured_length": 72,
+        "original_length": 72,
+        "available_length": 72,
+        "sha256": "e99ee010fd56f92ce2ae9553db4cac6071d3a6df06bcef23f76384fbb384f139",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.10",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 58,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53000,
+            "destination_port": 53,
+            "length": 38,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 82,
+            "payload_length": 30
+          },
+          "dns": {
+            "id": 100,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "example.test.",
+            "name_key": "076578616d706c65047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 94,
+            "message_offset": 82
+          }
+        }
+      },
+      {
+        "index": 1,
+        "record_offset": 112,
+        "data_offset": 128,
+        "timestamp_ns": 1700000000010000000,
+        "captured_length": 72,
+        "original_length": 72,
+        "available_length": 72,
+        "sha256": "65fd76be616cb0a9d50ab9de40b02084d2bb2e43487ad150b7c6cafd7d3410ae",
+        "status": "quarantined",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          }
+        }
+      },
+      {
+        "index": 2,
+        "record_offset": 200,
+        "data_offset": 216,
+        "timestamp_ns": 1700000000020000000,
+        "captured_length": 72,
+        "original_length": 72,
+        "available_length": 72,
+        "sha256": "ecf5bf4ccf508b2b2c0c602f6df2782560e34af09adb473753a35ab9aedd49ff",
+        "status": "quarantined",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.10",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 58,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          }
+        }
+      },
+      {
+        "index": 3,
+        "record_offset": 288,
+        "data_offset": 304,
+        "timestamp_ns": 1700000000030000000,
+        "captured_length": 60,
+        "original_length": 60,
+        "available_length": 60,
+        "sha256": "3d96944291f5e8c37ec90cade7dd7323415ee3fdca7928312c184b3b265b361b",
+        "status": "quarantined",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.10",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 46,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53000,
+            "destination_port": 53,
+            "length": 26,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 346,
+            "payload_length": 18
+          }
+        }
+      },
+      {
+        "index": 4,
+        "record_offset": 364,
+        "data_offset": 380,
+        "timestamp_ns": 1700000000040000000,
+        "captured_length": 65,
+        "original_length": 72,
+        "available_length": 65,
+        "sha256": "a4eaa6a1e00eeaaf5d9d14c1796dfc7c98c53a64257dcb9291253ffafb97ba92",
+        "status": "quarantined",
+        "layers": {}
+      },
+      {
+        "index": 5,
+        "record_offset": 445,
+        "data_offset": 461,
+        "timestamp_ns": 1700000000050000000,
+        "captured_length": 72,
+        "original_length": 72,
+        "available_length": 72,
+        "sha256": "fe352025f3a64d8aac5ec7d4997c38023e9f2bda2615d565777e85ccafd37cd7",
+        "status": "unsupported",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.10",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 58,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 8192,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          }
+        }
+      },
+      {
+        "index": 6,
+        "record_offset": 533,
+        "data_offset": 549,
+        "timestamp_ns": 1700000000060000000,
+        "captured_length": 48,
+        "original_length": 48,
+        "available_length": 48,
+        "sha256": "b2b073d322021ae79b82e4b91ae8cbbc6bc827e946e1b527fd439ec3c129a174",
+        "status": "unsupported",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.10",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 34,
+            "protocol": 6,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          }
+        }
+      },
+      {
+        "index": 7,
+        "record_offset": 597,
+        "data_offset": 613,
+        "timestamp_ns": 1700000000070000000,
+        "captured_length": 72,
+        "original_length": 72,
+        "available_length": 72,
+        "sha256": "28715445637f5c1d6ed2300b8405c65ee45887b783880162997d0776f696d230",
+        "status": "unsupported",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 34525
+          }
+        }
+      },
+      {
+        "index": 8,
+        "record_offset": 685,
+        "data_offset": 701,
+        "timestamp_ns": 1700000000080000000,
+        "captured_length": 54,
+        "original_length": 54,
+        "available_length": 54,
+        "sha256": "68f1f5163269b8ee8c4a6e4f5f0827c751d4e3a58e6208f9b286ec054795a5f7",
+        "status": "unsupported",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.10",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 40,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53000,
+            "destination_port": 53,
+            "length": 20,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 743,
+            "payload_length": 12
+          }
+        }
+      },
+      {
+        "index": 9,
+        "record_offset": 755,
+        "data_offset": 771,
+        "timestamp_ns": 1700000000090000000,
+        "captured_length": 72,
+        "original_length": 72,
+        "available_length": 72,
+        "sha256": "e09add407b3c978e415c162355ca4e5bc93bbae960695bc40995a0a78d44b239",
+        "status": "quarantined",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.10",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 58,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          }
+        }
+      },
+      {
+        "index": 10,
+        "record_offset": 843,
+        "data_offset": 859,
+        "timestamp_ns": 1700000000100000000,
+        "captured_length": 72,
+        "original_length": 72,
+        "available_length": 72,
+        "sha256": "aed9b221a120585d632970113706b5ff38f77b4b168c540acac5b9ad68943283",
+        "status": "quarantined",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          }
+        }
+      },
+      {
+        "index": 11,
+        "record_offset": 931,
+        "data_offset": 947,
+        "timestamp_ns": 1700000000110000000,
+        "captured_length": 72,
+        "original_length": 72,
+        "available_length": 72,
+        "sha256": "57386bb7bee0665086fd4b00a76c85b478e82a0da511999f4ead0448394abb15",
+        "status": "quarantined",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          }
+        }
+      },
+      {
+        "index": 12,
+        "record_offset": 1019,
+        "data_offset": 1035,
+        "timestamp_ns": 1700000000120000000,
+        "captured_length": 72,
+        "original_length": 71,
+        "available_length": 72,
+        "sha256": "e99ee010fd56f92ce2ae9553db4cac6071d3a6df06bcef23f76384fbb384f139",
+        "status": "quarantined",
+        "layers": {}
+      },
+      {
+        "index": 13,
+        "record_offset": 1107,
+        "data_offset": 1123,
+        "timestamp_ns": null,
+        "captured_length": 72,
+        "original_length": 72,
+        "available_length": 72,
+        "sha256": "e99ee010fd56f92ce2ae9553db4cac6071d3a6df06bcef23f76384fbb384f139",
+        "status": "quarantined",
+        "layers": {}
+      },
+      {
+        "index": 14,
+        "record_offset": 1195,
+        "data_offset": 1211,
+        "timestamp_ns": 1700000001000000000,
+        "captured_length": 64,
+        "original_length": 64,
+        "available_length": 7,
+        "sha256": "9834a14ab9bcaa0f6a8da71073617eac8f004e596a3fa11d807b84631b825d9d",
+        "status": "quarantined",
+        "layers": {}
+      }
+    ],
+    "issues": [
+      {
+        "record_index": 1,
+        "record_offset": 112,
+        "byte_offset": 152,
+        "code": "ipv4_checksum",
+        "category": "malformed",
+        "detail": "Invalid IPv4 header checksum"
+      },
+      {
+        "record_index": 2,
+        "record_offset": 200,
+        "byte_offset": 256,
+        "code": "udp_checksum",
+        "category": "malformed",
+        "detail": "Invalid nonzero UDP checksum"
+      },
+      {
+        "record_index": 3,
+        "record_offset": 288,
+        "byte_offset": 358,
+        "code": "dns_pointer_loop",
+        "category": "malformed",
+        "detail": "Pointer revisits a name offset"
+      },
+      {
+        "record_index": 4,
+        "record_offset": 364,
+        "byte_offset": 445,
+        "code": "capture_truncated",
+        "category": "truncated",
+        "detail": "Captured bytes are shorter than original frame"
+      },
+      {
+        "record_index": 5,
+        "record_offset": 445,
+        "byte_offset": 481,
+        "code": "ipv4_fragment",
+        "category": "unsupported",
+        "detail": "Fragment reassembly is outside scope"
+      },
+      {
+        "record_index": 6,
+        "record_offset": 533,
+        "byte_offset": 572,
+        "code": "ipv4_protocol",
+        "category": "unsupported",
+        "detail": "Only UDP payloads are decoded"
+      },
+      {
+        "record_index": 7,
+        "record_offset": 597,
+        "byte_offset": 625,
+        "code": "ethernet_subset",
+        "category": "unsupported",
+        "detail": "Only untagged Ethernet IPv4 is supported"
+      },
+      {
+        "record_index": 8,
+        "record_offset": 685,
+        "byte_offset": 745,
+        "code": "dns_subset",
+        "category": "unsupported",
+        "detail": "Only opcode 0 with exactly one question is analyzed"
+      },
+      {
+        "record_index": 9,
+        "record_offset": 755,
+        "byte_offset": 809,
+        "code": "udp_length",
+        "category": "malformed",
+        "detail": "UDP length lies outside IPv4 payload"
+      },
+      {
+        "record_index": 10,
+        "record_offset": 843,
+        "byte_offset": 875,
+        "code": "ipv4_total_length",
+        "category": "malformed",
+        "detail": "Declared IPv4 length is outside captured packet"
+      },
+      {
+        "record_index": 11,
+        "record_offset": 931,
+        "byte_offset": 961,
+        "code": "ipv4_version_ihl",
+        "category": "malformed",
+        "detail": "Invalid IPv4 version/header length"
+      },
+      {
+        "record_index": 12,
+        "record_offset": 1019,
+        "byte_offset": 1027,
+        "code": "record_lengths",
+        "category": "malformed",
+        "detail": "Captured length exceeds snap length or original length"
+      },
+      {
+        "record_index": 13,
+        "record_offset": 1107,
+        "byte_offset": 1111,
+        "code": "timestamp_fraction",
+        "category": "malformed",
+        "detail": "Timestamp fraction exceeds declared resolution"
+      },
+      {
+        "record_index": 14,
+        "record_offset": 1195,
+        "byte_offset": 1218,
+        "code": "record_data_short",
+        "category": "truncated",
+        "detail": "Declared record data exceeds file; parsing stops"
+      }
+    ],
+    "scan_complete": false
+  },
+  "analysis": {
+    "timeout_ns": 2000000000,
+    "burst_window_ns": 500000000,
+    "burst_threshold": 5,
+    "capture_end_ns": 1700000000110000000,
+    "queries": [
+      {
+        "record_index": 0,
+        "timestamp_ns": 1700000000000000000,
+        "name": "example.test.",
+        "client": "192.0.2.10",
+        "server": "198.51.100.53",
+        "status": "right_censored",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      }
+    ],
+    "responses": [],
+    "matches": [],
+    "burst_windows": [],
+    "scope": "Observed exact-key matches only; no server receipt, resolver timeout, attack or intent inference"
+  }
+}

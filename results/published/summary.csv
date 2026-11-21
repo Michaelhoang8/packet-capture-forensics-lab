@@ -1,0 +1,6 @@
+capture,bytes,records,dns,udp,quarantined,unsupported,issues,scan_complete,matches,unmatched_responses,ambiguous_responses,unanswered_queries,censored_queries,burst_windows
+dns-observations.pcap,3183,33,32,1,0,0,0,True,13,1,1,3,1,1
+corruption-cases.pcap,1218,15,1,0,10,4,14,False,0,0,0,0,1,0
+big-endian-micro.pcap,216,2,2,0,0,0,0,True,0,1,0,0,1,0
+little-endian-nano.pcap,216,2,2,0,0,0,0,True,1,0,0,0,0,0
+big-endian-nano.pcap,216,2,2,0,0,0,0,True,1,0,0,0,0,0

@@ -1,0 +1,29 @@
+{
+  "rendered_utc": "2026-11-21T01:41:11.341738+00:00",
+  "numpy": "2.3.5",
+  "matplotlib": "3.11.2",
+  "source_sha256_lf": "6fc0930fb072db022992b60fb641c0d1e7748175c1c97f0d35f693dfff4da8c6",
+  "inputs": {
+    "results/published/captures/big-endian-micro.pcap": "1796637c69483e5e3664462946a8a8c5950b92bd7e93789dee9d68137adf4c25",
+    "results/published/captures/big-endian-nano.pcap": "7211fda8833cfcd7acdf6ee94775eb8339baa4245eeee69b3e3d4f60b81cff34",
+    "results/published/captures/corruption-cases.pcap": "852bfc8ab8a5a7979feac0658f92fc71caafed795d702afd797a337ae05b8e29",
+    "results/published/captures/dns-observations.pcap": "8a05c6742e0a1bb6bf719411f87f04ef246f494761febd9ec3d356d5c1a8578f",
+    "results/published/captures/little-endian-nano.pcap": "1c43d09e64f5e6120b488078da2db2338973a8e8f416de73bd91361fa68434b6",
+    "results/published/decoded/big-endian-micro.json": "eebd962b7243073d34e3dd5b80f248d98177791ef0d9c9a7514dd2aa27a80736",
+    "results/published/decoded/big-endian-nano.json": "61e70ecca78556885f700ec621340e840f1f41e32ea9a2fd41f01fd6757730cf",
+    "results/published/decoded/corruption-cases.json": "e0d40015f548fc5a12b825d1a19d194d74a9ac138c8fcfca938229ae3e4facb6",
+    "results/published/decoded/dns-observations.json": "834e8855147ccc70a9bf93d09fffe09728d801a67de7742a914d9fcde4a70c06",
+    "results/published/decoded/little-endian-nano.json": "1acb37fa2c871ca9eee9386a290a4f3a22cd9a68c49b048ce1235b7963304bb4",
+    "results/published/environment.json": "02d6c93bf2f6ca98888475b4644e9a29cebbd252cee1a7a9346cd58a3919021b",
+    "results/published/issues.csv": "81716d2a1b7c1711f7367084c6ce570047c733505a1f48c97c3d00e5ce3e6ba8",
+    "results/published/manifest.json": "2b1a8da8300ed866984ee0aa2b964abc46c13f77041be29599db79b895f46099",
+    "results/published/measurements.csv": "58a29b4cbc547fca7aeb1db8243e338f2d5727d8eeac668404fd9e15da3d74bd",
+    "results/published/packets.csv": "bbc3e4f19d684d78b6e31257c054bc673111d206d397fbf2b155c12a182b9ba5",
+    "results/published/summary.csv": "69379e4830518950510137895d4ef3861a69aa0c6cf18d3155211f9d284546eb"
+  },
+  "outputs": {
+    "docs/report.html": "485143298b327c3846305a757457b5d2cf3a9131fd8a548b98beaaa587c1c6ce",
+    "docs/assets/timeline.png": "e98245760aae8f39c3efe2c039ef25d3df81b261548f9c3627761ecec3aa61c1",
+    "docs/assets/inspector-data.json": "4119f2f19ed9cf470d748fef790d9d0c05ce9d8727695ab1ed42bea9c588b174"
+  }
+}

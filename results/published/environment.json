@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-11-21T01:32:09.332512+00:00",
+  "completed_utc": "2026-11-21T01:32:09.351711+00:00",
+  "python": "3.13.17",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_sha256_lf": {
+    "src/pcaplab/core.py": "7cd470f9701abe2acb34f245a3d9f0bbec6163974c312a0b74ab22c6ded8534e",
+    "src/pcaplab/analysis.py": "eb62e18c81597ddd06a2685c45d2ac027f1cc49e67ed239b3a0662491f07ae20",
+    "scripts/fixtures.py": "7ed6885b732607c557f7c194fd03597859a59e086ee61575d5e354c59b9331f5",
+    "scripts/run_study.py": "525928d8a9c90936ea0151ce99afe50887be91da4d66857efc71b1405f1f1f37"
+  },
+  "fixtures": "Owned deterministic byte construction; no socket, network capture or third-party data",
+  "random_seed": 20261121,
+  "random_scope": "17 opaque non-DNS payload bytes only",
+  "synthetic_epoch_seconds": 1700000000,
+  "epoch_note": "Chosen timeline origin, not a real capture date",
+  "timing": "Five warmed parse+analysis calls per file; excludes file I/O; fixed file order, no throughput claim"
+}

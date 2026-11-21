@@ -1,0 +1,170 @@
+{
+  "capture": {
+    "metadata": {
+      "endianness": "big",
+      "timestamp_resolution": 1000000000,
+      "snaplen": 65535,
+      "linktype": 1,
+      "bytes": 216,
+      "sha256": "7211fda8833cfcd7acdf6ee94775eb8339baa4245eeee69b3e3d4f60b81cff34"
+    },
+    "records": [
+      {
+        "index": 0,
+        "record_offset": 24,
+        "data_offset": 40,
+        "timestamp_ns": 1700000000123456000,
+        "captured_length": 72,
+        "original_length": 72,
+        "available_length": 72,
+        "sha256": "e99ee010fd56f92ce2ae9553db4cac6071d3a6df06bcef23f76384fbb384f139",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.10",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 58,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53000,
+            "destination_port": 53,
+            "length": 38,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 82,
+            "payload_length": 30
+          },
+          "dns": {
+            "id": 100,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "example.test.",
+            "name_key": "076578616d706c65047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 94,
+            "message_offset": 82
+          }
+        }
+      },
+      {
+        "index": 1,
+        "record_offset": 112,
+        "data_offset": 128,
+        "timestamp_ns": 1700000000123456789,
+        "captured_length": 88,
+        "original_length": 88,
+        "available_length": 88,
+        "sha256": "63d897bd6d98e7fb13d485625a1c60cc9dc5bbddeb890d380973cfe8eb7e4676",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.10",
+            "header_length": 20,
+            "total_length": 74,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 53000,
+            "length": 54,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 170,
+            "payload_length": 46
+          },
+          "dns": {
+            "id": 100,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "example.test.",
+            "name_key": "076578616d706c65047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "example.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 182,
+            "message_offset": 170
+          }
+        }
+      }
+    ],
+    "issues": [],
+    "scan_complete": true
+  },
+  "analysis": {
+    "timeout_ns": 2000000000,
+    "burst_window_ns": 500000000,
+    "burst_threshold": 5,
+    "capture_end_ns": 1700000000123456789,
+    "queries": [
+      {
+        "record_index": 0,
+        "timestamp_ns": 1700000000123456000,
+        "name": "example.test.",
+        "client": "192.0.2.10",
+        "server": "198.51.100.53",
+        "status": "matched",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      }
+    ],
+    "responses": [
+      {
+        "record_index": 1,
+        "timestamp_ns": 1700000000123456789,
+        "name": "example.test.",
+        "status": "matched",
+        "candidate_count": 1,
+        "candidate_indices": [
+          0
+        ]
+      }
+    ],
+    "matches": [
+      {
+        "query_index": 0,
+        "response_index": 1,
+        "name": "example.test.",
+        "client": "192.0.2.10",
+        "server": "198.51.100.53",
+        "latency_ns": 789,
+        "rcode_low4": 0
+      }
+    ],
+    "burst_windows": [],
+    "scope": "Observed exact-key matches only; no server receipt, resolver timeout, attack or intent inference"
+  }
+}

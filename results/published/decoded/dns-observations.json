@@ -1,0 +1,2300 @@
+{
+  "capture": {
+    "metadata": {
+      "endianness": "little",
+      "timestamp_resolution": 1000000,
+      "snaplen": 65535,
+      "linktype": 1,
+      "bytes": 3183,
+      "sha256": "8a05c6742e0a1bb6bf719411f87f04ef246f494761febd9ec3d356d5c1a8578f"
+    },
+    "records": [
+      {
+        "index": 0,
+        "record_offset": 24,
+        "data_offset": 40,
+        "timestamp_ns": 1700000000000000000,
+        "captured_length": 72,
+        "original_length": 72,
+        "available_length": 72,
+        "sha256": "e99ee010fd56f92ce2ae9553db4cac6071d3a6df06bcef23f76384fbb384f139",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.10",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 58,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53000,
+            "destination_port": 53,
+            "length": 38,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 82,
+            "payload_length": 30
+          },
+          "dns": {
+            "id": 100,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "example.test.",
+            "name_key": "076578616d706c65047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 94,
+            "message_offset": 82
+          }
+        }
+      },
+      {
+        "index": 1,
+        "record_offset": 112,
+        "data_offset": 128,
+        "timestamp_ns": 1700000000035000000,
+        "captured_length": 88,
+        "original_length": 88,
+        "available_length": 88,
+        "sha256": "63d897bd6d98e7fb13d485625a1c60cc9dc5bbddeb890d380973cfe8eb7e4676",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.10",
+            "header_length": 20,
+            "total_length": 74,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 53000,
+            "length": 54,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 170,
+            "payload_length": 46
+          },
+          "dns": {
+            "id": 100,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "example.test.",
+            "name_key": "076578616d706c65047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "example.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 182,
+            "message_offset": 170
+          }
+        }
+      },
+      {
+        "index": 2,
+        "record_offset": 216,
+        "data_offset": 232,
+        "timestamp_ns": 1700000000100000000,
+        "captured_length": 75,
+        "original_length": 75,
+        "available_length": 75,
+        "sha256": "2a94463ac339e884d5404069dc34064d68813989d7687a8344c8d3108707cb33",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.10",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 61,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53000,
+            "destination_port": 53,
+            "length": 41,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 274,
+            "payload_length": 33
+          },
+          "dns": {
+            "id": 101,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "unanswered.test.",
+            "name_key": "0a756e616e737765726564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 286,
+            "message_offset": 274
+          }
+        }
+      },
+      {
+        "index": 3,
+        "record_offset": 307,
+        "data_offset": 323,
+        "timestamp_ns": 1700000000180000000,
+        "captured_length": 87,
+        "original_length": 87,
+        "available_length": 87,
+        "sha256": "004a2915fca6b02c27e0d9a0c873b8d2e64f9ad49969fb72216c291408d41a6c",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.10",
+            "header_length": 20,
+            "total_length": 73,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 53000,
+            "length": 53,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 365,
+            "payload_length": 45
+          },
+          "dns": {
+            "id": 999,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "orphan.test.",
+            "name_key": "066f727068616e047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "orphan.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 377,
+            "message_offset": 365
+          }
+        }
+      },
+      {
+        "index": 4,
+        "record_offset": 410,
+        "data_offset": 426,
+        "timestamp_ns": 1700000000300000000,
+        "captured_length": 73,
+        "original_length": 73,
+        "available_length": 73,
+        "sha256": "ff881c4ab714c868ff0ffa9120d75e4d7aa3bc25552f64a47e5fab187cc56def",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.20",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 59,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 54000,
+            "destination_port": 53,
+            "length": 39,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 468,
+            "payload_length": 31
+          },
+          "dns": {
+            "id": 200,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 480,
+            "message_offset": 468
+          }
+        }
+      },
+      {
+        "index": 5,
+        "record_offset": 499,
+        "data_offset": 515,
+        "timestamp_ns": 1700000000310000000,
+        "captured_length": 89,
+        "original_length": 89,
+        "available_length": 89,
+        "sha256": "65d5390bd19e758d1d6ca86486045803bc153c34784979e0b0ae13ec94c21e0a",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.20",
+            "header_length": 20,
+            "total_length": 75,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 54000,
+            "length": 55,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 557,
+            "payload_length": 47
+          },
+          "dns": {
+            "id": 200,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "repeated.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 569,
+            "message_offset": 557
+          }
+        }
+      },
+      {
+        "index": 6,
+        "record_offset": 604,
+        "data_offset": 620,
+        "timestamp_ns": 1700000000320000000,
+        "captured_length": 73,
+        "original_length": 73,
+        "available_length": 73,
+        "sha256": "0acaa0a82b309c7c11e0ca2d253ae97432663d26e171d1db67a4581aca3444ff",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.20",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 59,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 54001,
+            "destination_port": 53,
+            "length": 39,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 662,
+            "payload_length": 31
+          },
+          "dns": {
+            "id": 201,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 674,
+            "message_offset": 662
+          }
+        }
+      },
+      {
+        "index": 7,
+        "record_offset": 693,
+        "data_offset": 709,
+        "timestamp_ns": 1700000000330000000,
+        "captured_length": 89,
+        "original_length": 89,
+        "available_length": 89,
+        "sha256": "525ad69e8a141f0f2ae7eeee375b2250eb6317a304bf8d0dd5c35dff27606e25",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.20",
+            "header_length": 20,
+            "total_length": 75,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 54001,
+            "length": 55,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 751,
+            "payload_length": 47
+          },
+          "dns": {
+            "id": 201,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "repeated.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 763,
+            "message_offset": 751
+          }
+        }
+      },
+      {
+        "index": 8,
+        "record_offset": 798,
+        "data_offset": 814,
+        "timestamp_ns": 1700000000340000000,
+        "captured_length": 73,
+        "original_length": 73,
+        "available_length": 73,
+        "sha256": "5e59f659b0108248f878ec17a440d11f9e449102977de463a6b28be4ba97f4a9",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.20",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 59,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 54002,
+            "destination_port": 53,
+            "length": 39,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 856,
+            "payload_length": 31
+          },
+          "dns": {
+            "id": 202,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 868,
+            "message_offset": 856
+          }
+        }
+      },
+      {
+        "index": 9,
+        "record_offset": 887,
+        "data_offset": 903,
+        "timestamp_ns": 1700000000350000000,
+        "captured_length": 89,
+        "original_length": 89,
+        "available_length": 89,
+        "sha256": "d91d06cb90742cb1bed7dc9b08cdf1d25830f56fc9c9a96cbbcee2ce0d7b3502",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.20",
+            "header_length": 20,
+            "total_length": 75,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 54002,
+            "length": 55,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 945,
+            "payload_length": 47
+          },
+          "dns": {
+            "id": 202,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "repeated.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 957,
+            "message_offset": 945
+          }
+        }
+      },
+      {
+        "index": 10,
+        "record_offset": 992,
+        "data_offset": 1008,
+        "timestamp_ns": 1700000000360000000,
+        "captured_length": 73,
+        "original_length": 73,
+        "available_length": 73,
+        "sha256": "bf2493f9393831985f3f43440265a818beeaa2a726499d134e68ac24495356b3",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.20",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 59,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 54003,
+            "destination_port": 53,
+            "length": 39,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 1050,
+            "payload_length": 31
+          },
+          "dns": {
+            "id": 203,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 1062,
+            "message_offset": 1050
+          }
+        }
+      },
+      {
+        "index": 11,
+        "record_offset": 1081,
+        "data_offset": 1097,
+        "timestamp_ns": 1700000000370000000,
+        "captured_length": 89,
+        "original_length": 89,
+        "available_length": 89,
+        "sha256": "9a37b88ff971b6925f5405945827b67a8d922fd8ca88597325971fdf862afbcc",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.20",
+            "header_length": 20,
+            "total_length": 75,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 54003,
+            "length": 55,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 1139,
+            "payload_length": 47
+          },
+          "dns": {
+            "id": 203,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "repeated.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 1151,
+            "message_offset": 1139
+          }
+        }
+      },
+      {
+        "index": 12,
+        "record_offset": 1186,
+        "data_offset": 1202,
+        "timestamp_ns": 1700000000380000000,
+        "captured_length": 73,
+        "original_length": 73,
+        "available_length": 73,
+        "sha256": "73124a6de2991cd19c45568990eaf184eec24cf957af23d01abdd8df2f4233d5",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.20",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 59,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 54004,
+            "destination_port": 53,
+            "length": 39,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 1244,
+            "payload_length": 31
+          },
+          "dns": {
+            "id": 204,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 1256,
+            "message_offset": 1244
+          }
+        }
+      },
+      {
+        "index": 13,
+        "record_offset": 1275,
+        "data_offset": 1291,
+        "timestamp_ns": 1700000000390000000,
+        "captured_length": 89,
+        "original_length": 89,
+        "available_length": 89,
+        "sha256": "f7313efb30698d6733b431f152fa4105341bb334f50b863f8f1f619140b0fe0d",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.20",
+            "header_length": 20,
+            "total_length": 75,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 54004,
+            "length": 55,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 1333,
+            "payload_length": 47
+          },
+          "dns": {
+            "id": 204,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "repeated.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 1345,
+            "message_offset": 1333
+          }
+        }
+      },
+      {
+        "index": 14,
+        "record_offset": 1380,
+        "data_offset": 1396,
+        "timestamp_ns": 1700000000400000000,
+        "captured_length": 73,
+        "original_length": 73,
+        "available_length": 73,
+        "sha256": "e356d59da599186018d844c0a326cd47e27791e325481d9581ee86e1b7cfd4ed",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.20",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 59,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 54005,
+            "destination_port": 53,
+            "length": 39,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 1438,
+            "payload_length": 31
+          },
+          "dns": {
+            "id": 205,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 1450,
+            "message_offset": 1438
+          }
+        }
+      },
+      {
+        "index": 15,
+        "record_offset": 1469,
+        "data_offset": 1485,
+        "timestamp_ns": 1700000000410000000,
+        "captured_length": 89,
+        "original_length": 89,
+        "available_length": 89,
+        "sha256": "396cfd7e73add7520c256c68bd63905a4afc0db220ef7e19b1b59f3d61d9f8a2",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.20",
+            "header_length": 20,
+            "total_length": 75,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 54005,
+            "length": 55,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 1527,
+            "payload_length": 47
+          },
+          "dns": {
+            "id": 205,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "repeated.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 1539,
+            "message_offset": 1527
+          }
+        }
+      },
+      {
+        "index": 16,
+        "record_offset": 1574,
+        "data_offset": 1590,
+        "timestamp_ns": 1700000000420000000,
+        "captured_length": 73,
+        "original_length": 73,
+        "available_length": 73,
+        "sha256": "29f89f9c44cbaf12a5966d7f9287310ed073e8fb92f323054e1740ff7d7bd48c",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.20",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 59,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 54006,
+            "destination_port": 53,
+            "length": 39,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 1632,
+            "payload_length": 31
+          },
+          "dns": {
+            "id": 206,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 1644,
+            "message_offset": 1632
+          }
+        }
+      },
+      {
+        "index": 17,
+        "record_offset": 1663,
+        "data_offset": 1679,
+        "timestamp_ns": 1700000000430000000,
+        "captured_length": 89,
+        "original_length": 89,
+        "available_length": 89,
+        "sha256": "97cae174db162ade20190d2b257423480a25a48f2bc99327069d0b1ffae47b68",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.20",
+            "header_length": 20,
+            "total_length": 75,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 54006,
+            "length": 55,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 1721,
+            "payload_length": 47
+          },
+          "dns": {
+            "id": 206,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "repeated.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 1733,
+            "message_offset": 1721
+          }
+        }
+      },
+      {
+        "index": 18,
+        "record_offset": 1768,
+        "data_offset": 1784,
+        "timestamp_ns": 1700000000440000000,
+        "captured_length": 73,
+        "original_length": 73,
+        "available_length": 73,
+        "sha256": "95525201a40118b0c14f99ad062a05c012ab2dc94577bc8391032cfb843f6a82",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.20",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 59,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 54007,
+            "destination_port": 53,
+            "length": 39,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 1826,
+            "payload_length": 31
+          },
+          "dns": {
+            "id": 207,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 1838,
+            "message_offset": 1826
+          }
+        }
+      },
+      {
+        "index": 19,
+        "record_offset": 1857,
+        "data_offset": 1873,
+        "timestamp_ns": 1700000000450000000,
+        "captured_length": 89,
+        "original_length": 89,
+        "available_length": 89,
+        "sha256": "ca50c95c2a3efb4a98414eb0e33f10537ff8445db3b55c6b76ba9216ff5898e0",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.20",
+            "header_length": 20,
+            "total_length": 75,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 54007,
+            "length": 55,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 1915,
+            "payload_length": 47
+          },
+          "dns": {
+            "id": 207,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "repeated.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 1927,
+            "message_offset": 1915
+          }
+        }
+      },
+      {
+        "index": 20,
+        "record_offset": 1962,
+        "data_offset": 1978,
+        "timestamp_ns": 1700000000460000000,
+        "captured_length": 73,
+        "original_length": 73,
+        "available_length": 73,
+        "sha256": "595dacf24273aedd59ebd56a706dd9745f2e9838e879c807d743989c4fe5c521",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.20",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 59,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 54008,
+            "destination_port": 53,
+            "length": 39,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 2020,
+            "payload_length": 31
+          },
+          "dns": {
+            "id": 208,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 2032,
+            "message_offset": 2020
+          }
+        }
+      },
+      {
+        "index": 21,
+        "record_offset": 2051,
+        "data_offset": 2067,
+        "timestamp_ns": 1700000000470000000,
+        "captured_length": 89,
+        "original_length": 89,
+        "available_length": 89,
+        "sha256": "7ce1d0a837d9eec78dfe442d693a2a78f5d62f4672c43decf9c2baf027e5b20d",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.20",
+            "header_length": 20,
+            "total_length": 75,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 54008,
+            "length": 55,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 2109,
+            "payload_length": 47
+          },
+          "dns": {
+            "id": 208,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "repeated.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 2121,
+            "message_offset": 2109
+          }
+        }
+      },
+      {
+        "index": 22,
+        "record_offset": 2156,
+        "data_offset": 2172,
+        "timestamp_ns": 1700000000480000000,
+        "captured_length": 73,
+        "original_length": 73,
+        "available_length": 73,
+        "sha256": "b032f06d70c65696cebe285121503972bdb36af57ed20b83ffc8f502b1465fac",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.20",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 59,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 54009,
+            "destination_port": 53,
+            "length": 39,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 2214,
+            "payload_length": 31
+          },
+          "dns": {
+            "id": 209,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 2226,
+            "message_offset": 2214
+          }
+        }
+      },
+      {
+        "index": 23,
+        "record_offset": 2245,
+        "data_offset": 2261,
+        "timestamp_ns": 1700000000490000000,
+        "captured_length": 89,
+        "original_length": 89,
+        "available_length": 89,
+        "sha256": "6c22b3ca303cb0be86576618a800a4e83dd43a91fe30707b21d88e7de22b3972",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.20",
+            "header_length": 20,
+            "total_length": 75,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 54009,
+            "length": 55,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 2303,
+            "payload_length": 47
+          },
+          "dns": {
+            "id": 209,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "repeated.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 2315,
+            "message_offset": 2303
+          }
+        }
+      },
+      {
+        "index": 24,
+        "record_offset": 2350,
+        "data_offset": 2366,
+        "timestamp_ns": 1700000000500000000,
+        "captured_length": 73,
+        "original_length": 73,
+        "available_length": 73,
+        "sha256": "d995b76945cf9aa19c387c10b4e2975a08a8bc5a265091da75cf2cd7f5d78673",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.20",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 59,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 54010,
+            "destination_port": 53,
+            "length": 39,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 2408,
+            "payload_length": 31
+          },
+          "dns": {
+            "id": 210,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 2420,
+            "message_offset": 2408
+          }
+        }
+      },
+      {
+        "index": 25,
+        "record_offset": 2439,
+        "data_offset": 2455,
+        "timestamp_ns": 1700000000510000000,
+        "captured_length": 89,
+        "original_length": 89,
+        "available_length": 89,
+        "sha256": "3cef73a6a982b2ba4dd4e1e6171045cde0747c5b02012eb9425bb938d3489fbc",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.20",
+            "header_length": 20,
+            "total_length": 75,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 54010,
+            "length": 55,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 2497,
+            "payload_length": 47
+          },
+          "dns": {
+            "id": 210,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "repeated.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 2509,
+            "message_offset": 2497
+          }
+        }
+      },
+      {
+        "index": 26,
+        "record_offset": 2544,
+        "data_offset": 2560,
+        "timestamp_ns": 1700000000520000000,
+        "captured_length": 73,
+        "original_length": 73,
+        "available_length": 73,
+        "sha256": "7683245123e37b3f01c0cb43df7cbd266c013b6e86de16fe26084a5fcd9a9a3a",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.20",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 59,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 54011,
+            "destination_port": 53,
+            "length": 39,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 2602,
+            "payload_length": 31
+          },
+          "dns": {
+            "id": 211,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 2614,
+            "message_offset": 2602
+          }
+        }
+      },
+      {
+        "index": 27,
+        "record_offset": 2633,
+        "data_offset": 2649,
+        "timestamp_ns": 1700000000530000000,
+        "captured_length": 89,
+        "original_length": 89,
+        "available_length": 89,
+        "sha256": "10f478c9403cdaf8d72c7aab3a1131857406bab9b1cbb4625421871080e7b11c",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.20",
+            "header_length": 20,
+            "total_length": 75,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 54011,
+            "length": 55,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 2691,
+            "payload_length": 47
+          },
+          "dns": {
+            "id": 211,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "repeated.test.",
+            "name_key": "087265706561746564047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "repeated.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 2703,
+            "message_offset": 2691
+          }
+        }
+      },
+      {
+        "index": 28,
+        "record_offset": 2738,
+        "data_offset": 2754,
+        "timestamp_ns": 1700000000800000000,
+        "captured_length": 74,
+        "original_length": 74,
+        "available_length": 74,
+        "sha256": "cd991f7d76bba042a73bf5f1a1e93521cef6eaa05ad691fd34731c891139b393",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.10",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 60,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53000,
+            "destination_port": 53,
+            "length": 40,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 2796,
+            "payload_length": 32
+          },
+          "dns": {
+            "id": 300,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "duplicate.test.",
+            "name_key": "096475706c6963617465047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 2808,
+            "message_offset": 2796
+          }
+        }
+      },
+      {
+        "index": 29,
+        "record_offset": 2828,
+        "data_offset": 2844,
+        "timestamp_ns": 1700000000820000000,
+        "captured_length": 74,
+        "original_length": 74,
+        "available_length": 74,
+        "sha256": "cd991f7d76bba042a73bf5f1a1e93521cef6eaa05ad691fd34731c891139b393",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.10",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 60,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53000,
+            "destination_port": 53,
+            "length": 40,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 2886,
+            "payload_length": 32
+          },
+          "dns": {
+            "id": 300,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "duplicate.test.",
+            "name_key": "096475706c6963617465047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 2898,
+            "message_offset": 2886
+          }
+        }
+      },
+      {
+        "index": 30,
+        "record_offset": 2918,
+        "data_offset": 2934,
+        "timestamp_ns": 1700000000850000000,
+        "captured_length": 90,
+        "original_length": 90,
+        "available_length": 90,
+        "sha256": "576eedff5b3600f7b24cc284096cc8cc88dbc5b729558e13e75d68fc53630ed2",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "198.51.100.53",
+            "destination": "192.0.2.10",
+            "header_length": 20,
+            "total_length": 76,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53,
+            "destination_port": 53000,
+            "length": 56,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 2976,
+            "payload_length": 48
+          },
+          "dns": {
+            "id": 300,
+            "response": true,
+            "flags": 33152,
+            "rcode_low4": 0,
+            "name": "duplicate.test.",
+            "name_key": "096475706c6963617465047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [
+              {
+                "section": "answer",
+                "owner": "duplicate.test.",
+                "address": "203.0.113.10",
+                "ttl": 60
+              }
+            ],
+            "opaque_records": 0,
+            "question_offset": 2988,
+            "message_offset": 2976
+          }
+        }
+      },
+      {
+        "index": 31,
+        "record_offset": 3024,
+        "data_offset": 3040,
+        "timestamp_ns": 1700000003400000000,
+        "captured_length": 68,
+        "original_length": 68,
+        "available_length": 68,
+        "sha256": "5249f56e43b422662d93cfe3fa8034f367000ab122e8c550ae9e091e67642f6b",
+        "status": "dns",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.10",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 54,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53000,
+            "destination_port": 53,
+            "length": 34,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 3082,
+            "payload_length": 26
+          },
+          "dns": {
+            "id": 400,
+            "response": false,
+            "flags": 256,
+            "rcode_low4": 0,
+            "name": "end.test.",
+            "name_key": "03656e64047465737400",
+            "qtype": 1,
+            "qclass": 1,
+            "a_records": [],
+            "opaque_records": 0,
+            "question_offset": 3094,
+            "message_offset": 3082
+          }
+        }
+      },
+      {
+        "index": 32,
+        "record_offset": 3108,
+        "data_offset": 3124,
+        "timestamp_ns": 1700000003500000000,
+        "captured_length": 59,
+        "original_length": 59,
+        "available_length": 59,
+        "sha256": "de50f5fb8ff9f5925da3c42cfc3ba40ddeec4a334fb6cdeda78b9c05e3fedb0c",
+        "status": "udp",
+        "layers": {
+          "ethernet": {
+            "destination": "00:11:22:33:44:55",
+            "source": "66:77:88:99:aa:bb",
+            "ethertype": 2048
+          },
+          "ipv4": {
+            "source": "192.0.2.10",
+            "destination": "198.51.100.53",
+            "header_length": 20,
+            "total_length": 45,
+            "protocol": 17,
+            "ttl": 64,
+            "fragment_field": 0,
+            "checksum": "valid",
+            "ethernet_padding_bytes": 0
+          },
+          "udp": {
+            "source_port": 53000,
+            "destination_port": 9000,
+            "length": 25,
+            "checksum": "valid",
+            "ip_trailing_bytes": 0,
+            "payload_offset": 3166,
+            "payload_length": 17
+          }
+        }
+      }
+    ],
+    "issues": [],
+    "scan_complete": true
+  },
+  "analysis": {
+    "timeout_ns": 2000000000,
+    "burst_window_ns": 500000000,
+    "burst_threshold": 5,
+    "capture_end_ns": 1700000003500000000,
+    "queries": [
+      {
+        "record_index": 0,
+        "timestamp_ns": 1700000000000000000,
+        "name": "example.test.",
+        "client": "192.0.2.10",
+        "server": "198.51.100.53",
+        "status": "matched",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      },
+      {
+        "record_index": 2,
+        "timestamp_ns": 1700000000100000000,
+        "name": "unanswered.test.",
+        "client": "192.0.2.10",
+        "server": "198.51.100.53",
+        "status": "unanswered_within_window",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      },
+      {
+        "record_index": 4,
+        "timestamp_ns": 1700000000300000000,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "status": "matched",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      },
+      {
+        "record_index": 6,
+        "timestamp_ns": 1700000000320000000,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "status": "matched",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      },
+      {
+        "record_index": 8,
+        "timestamp_ns": 1700000000340000000,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "status": "matched",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      },
+      {
+        "record_index": 10,
+        "timestamp_ns": 1700000000360000000,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "status": "matched",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      },
+      {
+        "record_index": 12,
+        "timestamp_ns": 1700000000380000000,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "status": "matched",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      },
+      {
+        "record_index": 14,
+        "timestamp_ns": 1700000000400000000,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "status": "matched",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      },
+      {
+        "record_index": 16,
+        "timestamp_ns": 1700000000420000000,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "status": "matched",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      },
+      {
+        "record_index": 18,
+        "timestamp_ns": 1700000000440000000,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "status": "matched",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      },
+      {
+        "record_index": 20,
+        "timestamp_ns": 1700000000460000000,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "status": "matched",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      },
+      {
+        "record_index": 22,
+        "timestamp_ns": 1700000000480000000,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "status": "matched",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      },
+      {
+        "record_index": 24,
+        "timestamp_ns": 1700000000500000000,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "status": "matched",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      },
+      {
+        "record_index": 26,
+        "timestamp_ns": 1700000000520000000,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "status": "matched",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      },
+      {
+        "record_index": 28,
+        "timestamp_ns": 1700000000800000000,
+        "name": "duplicate.test.",
+        "client": "192.0.2.10",
+        "server": "198.51.100.53",
+        "status": "unanswered_within_window",
+        "ambiguous_response_indices": [
+          30
+        ],
+        "ambiguous_response_count": 1
+      },
+      {
+        "record_index": 29,
+        "timestamp_ns": 1700000000820000000,
+        "name": "duplicate.test.",
+        "client": "192.0.2.10",
+        "server": "198.51.100.53",
+        "status": "unanswered_within_window",
+        "ambiguous_response_indices": [
+          30
+        ],
+        "ambiguous_response_count": 1
+      },
+      {
+        "record_index": 31,
+        "timestamp_ns": 1700000003400000000,
+        "name": "end.test.",
+        "client": "192.0.2.10",
+        "server": "198.51.100.53",
+        "status": "right_censored",
+        "ambiguous_response_indices": [],
+        "ambiguous_response_count": 0
+      }
+    ],
+    "responses": [
+      {
+        "record_index": 1,
+        "timestamp_ns": 1700000000035000000,
+        "name": "example.test.",
+        "status": "matched",
+        "candidate_count": 1,
+        "candidate_indices": [
+          0
+        ]
+      },
+      {
+        "record_index": 3,
+        "timestamp_ns": 1700000000180000000,
+        "name": "orphan.test.",
+        "status": "unmatched",
+        "candidate_count": 0,
+        "candidate_indices": []
+      },
+      {
+        "record_index": 5,
+        "timestamp_ns": 1700000000310000000,
+        "name": "repeated.test.",
+        "status": "matched",
+        "candidate_count": 1,
+        "candidate_indices": [
+          4
+        ]
+      },
+      {
+        "record_index": 7,
+        "timestamp_ns": 1700000000330000000,
+        "name": "repeated.test.",
+        "status": "matched",
+        "candidate_count": 1,
+        "candidate_indices": [
+          6
+        ]
+      },
+      {
+        "record_index": 9,
+        "timestamp_ns": 1700000000350000000,
+        "name": "repeated.test.",
+        "status": "matched",
+        "candidate_count": 1,
+        "candidate_indices": [
+          8
+        ]
+      },
+      {
+        "record_index": 11,
+        "timestamp_ns": 1700000000370000000,
+        "name": "repeated.test.",
+        "status": "matched",
+        "candidate_count": 1,
+        "candidate_indices": [
+          10
+        ]
+      },
+      {
+        "record_index": 13,
+        "timestamp_ns": 1700000000390000000,
+        "name": "repeated.test.",
+        "status": "matched",
+        "candidate_count": 1,
+        "candidate_indices": [
+          12
+        ]
+      },
+      {
+        "record_index": 15,
+        "timestamp_ns": 1700000000410000000,
+        "name": "repeated.test.",
+        "status": "matched",
+        "candidate_count": 1,
+        "candidate_indices": [
+          14
+        ]
+      },
+      {
+        "record_index": 17,
+        "timestamp_ns": 1700000000430000000,
+        "name": "repeated.test.",
+        "status": "matched",
+        "candidate_count": 1,
+        "candidate_indices": [
+          16
+        ]
+      },
+      {
+        "record_index": 19,
+        "timestamp_ns": 1700000000450000000,
+        "name": "repeated.test.",
+        "status": "matched",
+        "candidate_count": 1,
+        "candidate_indices": [
+          18
+        ]
+      },
+      {
+        "record_index": 21,
+        "timestamp_ns": 1700000000470000000,
+        "name": "repeated.test.",
+        "status": "matched",
+        "candidate_count": 1,
+        "candidate_indices": [
+          20
+        ]
+      },
+      {
+        "record_index": 23,
+        "timestamp_ns": 1700000000490000000,
+        "name": "repeated.test.",
+        "status": "matched",
+        "candidate_count": 1,
+        "candidate_indices": [
+          22
+        ]
+      },
+      {
+        "record_index": 25,
+        "timestamp_ns": 1700000000510000000,
+        "name": "repeated.test.",
+        "status": "matched",
+        "candidate_count": 1,
+        "candidate_indices": [
+          24
+        ]
+      },
+      {
+        "record_index": 27,
+        "timestamp_ns": 1700000000530000000,
+        "name": "repeated.test.",
+        "status": "matched",
+        "candidate_count": 1,
+        "candidate_indices": [
+          26
+        ]
+      },
+      {
+        "record_index": 30,
+        "timestamp_ns": 1700000000850000000,
+        "name": "duplicate.test.",
+        "status": "ambiguous",
+        "candidate_count": 2,
+        "candidate_indices": [
+          28,
+          29
+        ]
+      }
+    ],
+    "matches": [
+      {
+        "query_index": 0,
+        "response_index": 1,
+        "name": "example.test.",
+        "client": "192.0.2.10",
+        "server": "198.51.100.53",
+        "latency_ns": 35000000,
+        "rcode_low4": 0
+      },
+      {
+        "query_index": 4,
+        "response_index": 5,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "latency_ns": 10000000,
+        "rcode_low4": 0
+      },
+      {
+        "query_index": 6,
+        "response_index": 7,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "latency_ns": 10000000,
+        "rcode_low4": 0
+      },
+      {
+        "query_index": 8,
+        "response_index": 9,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "latency_ns": 10000000,
+        "rcode_low4": 0
+      },
+      {
+        "query_index": 10,
+        "response_index": 11,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "latency_ns": 10000000,
+        "rcode_low4": 0
+      },
+      {
+        "query_index": 12,
+        "response_index": 13,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "latency_ns": 10000000,
+        "rcode_low4": 0
+      },
+      {
+        "query_index": 14,
+        "response_index": 15,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "latency_ns": 10000000,
+        "rcode_low4": 0
+      },
+      {
+        "query_index": 16,
+        "response_index": 17,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "latency_ns": 10000000,
+        "rcode_low4": 0
+      },
+      {
+        "query_index": 18,
+        "response_index": 19,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "latency_ns": 10000000,
+        "rcode_low4": 0
+      },
+      {
+        "query_index": 20,
+        "response_index": 21,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "latency_ns": 10000000,
+        "rcode_low4": 0
+      },
+      {
+        "query_index": 22,
+        "response_index": 23,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "latency_ns": 10000000,
+        "rcode_low4": 0
+      },
+      {
+        "query_index": 24,
+        "response_index": 25,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "latency_ns": 10000000,
+        "rcode_low4": 0
+      },
+      {
+        "query_index": 26,
+        "response_index": 27,
+        "name": "repeated.test.",
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "latency_ns": 10000000,
+        "rcode_low4": 0
+      }
+    ],
+    "burst_windows": [
+      {
+        "client": "192.0.2.20",
+        "server": "198.51.100.53",
+        "name": "repeated.test.",
+        "count": 12,
+        "first_ns": 1700000000300000000,
+        "last_ns": 1700000000520000000,
+        "record_indices": [
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          26
+        ]
+      }
+    ],
+    "scope": "Observed exact-key matches only; no server receipt, resolver timeout, attack or intent inference"
+  }
+}

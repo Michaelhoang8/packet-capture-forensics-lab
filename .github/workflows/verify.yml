@@ -1,0 +1,36 @@
+name: Verify offline parser and evidence
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -e .
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/run_study.py --out outputs/ci
+      - name: Reconcile deterministic fresh artifacts
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          fresh = Path('outputs/ci')
+          published = Path('results/published')
+          for group in ['captures', 'decoded']:
+              for path in (published / group).iterdir():
+                  assert path.read_bytes() == (fresh / group / path.name).read_bytes()
+          for name in ['packets.csv', 'issues.csv', 'summary.csv']:
+              assert (fresh / name).read_bytes() == (published / name).read_bytes()
+          for row in json.loads((fresh / 'manifest.json').read_text()):
+              data = (fresh / row['path']).read_bytes()
+              assert len(data) == row['bytes']
+              assert hashlib.sha256(data).hexdigest() == row['sha256']
+          PY
+      - name: Published evidence remains unchanged
+        run: git diff --exit-code -- results/published docs

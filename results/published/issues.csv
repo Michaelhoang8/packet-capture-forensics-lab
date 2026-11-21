@@ -1,0 +1,15 @@
+capture,record_index,record_offset,byte_offset,code,category,detail
+corruption-cases.pcap,1,112,152,ipv4_checksum,malformed,Invalid IPv4 header checksum
+corruption-cases.pcap,2,200,256,udp_checksum,malformed,Invalid nonzero UDP checksum
+corruption-cases.pcap,3,288,358,dns_pointer_loop,malformed,Pointer revisits a name offset
+corruption-cases.pcap,4,364,445,capture_truncated,truncated,Captured bytes are shorter than original frame
+corruption-cases.pcap,5,445,481,ipv4_fragment,unsupported,Fragment reassembly is outside scope
+corruption-cases.pcap,6,533,572,ipv4_protocol,unsupported,Only UDP payloads are decoded
+corruption-cases.pcap,7,597,625,ethernet_subset,unsupported,Only untagged Ethernet IPv4 is supported
+corruption-cases.pcap,8,685,745,dns_subset,unsupported,Only opcode 0 with exactly one question is analyzed
+corruption-cases.pcap,9,755,809,udp_length,malformed,UDP length lies outside IPv4 payload
+corruption-cases.pcap,10,843,875,ipv4_total_length,malformed,Declared IPv4 length is outside captured packet
+corruption-cases.pcap,11,931,961,ipv4_version_ihl,malformed,Invalid IPv4 version/header length
+corruption-cases.pcap,12,1019,1027,record_lengths,malformed,Captured length exceeds snap length or original length
+corruption-cases.pcap,13,1107,1111,timestamp_fraction,malformed,Timestamp fraction exceeds declared resolution
+corruption-cases.pcap,14,1195,1218,record_data_short,truncated,Declared record data exceeds file; parsing stops
